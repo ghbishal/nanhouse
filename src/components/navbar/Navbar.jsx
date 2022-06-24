@@ -17,7 +17,7 @@ const Navbar = () => {
     <nav className={scroll ? "navbar scrolled" : "navbar"}>
       <div className="nav-container">
         <div className="logo">
-          <a href="home">
+          <a href="#home">
             <img src={LOGO} alt="" />
           </a>
         </div>
