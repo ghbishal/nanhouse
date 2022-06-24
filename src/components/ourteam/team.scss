@@ -1,0 +1,215 @@
+.ourteam-container {
+  .valuableAssets {
+    background-image: url(../../assets/bgimg/parallax01.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    height: 450px;
+
+    .slogan {
+      background: rgba(0, 0, 0, 0.5);
+      height: 450px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+      align-items: center;
+      padding: 10px;
+
+      h1,
+      h2 {
+        text-align: center;
+        font-family: "Pacifico", cursive;
+        font-size: 2.8rem;
+        color: var(--color-yellow);
+        line-height: 1.2;
+      }
+
+      h2 {
+        font-family: "Averia Serif Libre", cursive;
+        font-weight: 700;
+        font-size: 2.5rem;
+        color: var(--color-white);
+        text-transform: uppercase;
+        padding-top: 10px;
+      }
+
+      .divider {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 5px 0;
+        z-index: -1;
+
+        .left,
+        .right {
+          padding: 1px 30px;
+          border-radius: 4px;
+          background: var(--color-orange);
+        }
+
+        .spoonFork {
+          color: var(--color-orange);
+          font-size: 2rem;
+          margin: 0 10px;
+        }
+      }
+    }
+  }
+
+  .team-container {
+    max-width: var(--container-width-exlg);
+    margin: 0 auto;
+    padding: 50px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // background: magenta;
+
+    .team {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 10px;
+      margin: auto;
+      // background: orange;
+
+      img {
+        width: 240px;
+        height: 160px;
+        cursor: pointer;
+        object-fit: cover;
+      }
+
+      .name {
+        font-family: "Averia Serif Libre", cursive;
+        padding-top: 2px;
+        font-weight: 600;
+        font-size: 1.4rem;
+        color: var(--color-black);
+        text-transform: uppercase;
+      }
+
+      .title {
+        color: var(--color-gray);
+        font-family: "Crimson Pro", serif;
+        font-weight: 600;
+        font-size: 1.2rem;
+        text-transform: capitalize;
+        letter-spacing: 1px;
+      }
+      .divider {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 2px 0;
+
+        .left,
+        .right {
+          padding: 1px 25px;
+          border-radius: 4px;
+          background: var(--color-orange);
+        }
+
+        .spoonFork {
+          color: var(--color-orange);
+          font-size: 2rem;
+          margin: 0 10px;
+        }
+      }
+
+      p {
+        font-family: "Crimson Pro", serif;
+        font-weight: 400;
+        width: 230px;
+        text-align: center;
+        padding: 3px;
+        color: var(--color-gray);
+        font-size: 0.9rem;
+      }
+    }
+  }
+}
+
+/* ==================== MEDIA QUERY ==================*/
+
+@media screen and (max-width: 1065px) {
+  .ourteam-container {
+    .valuableAssets {
+      .slogan {
+        h1 {
+          font-size: 2.6rem;
+        }
+
+        h2 {
+          font-size: 2.3rem;
+        }
+      }
+    }
+
+    .team-container {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 30px;
+
+      .team {
+        img {
+          width: 290px;
+          height: 200px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 690px) {
+  .ourteam-container {
+    .team-container {
+      .team {
+        img {
+          width: 240px;
+          height: 160px;
+        }
+
+        p {
+          width: 230px;
+          font-size: 0.9rem;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .ourteam-container {
+    .valuableAssets {
+      .slogan {
+        h1 {
+          font-size: 2.4rem;
+        }
+
+        h2 {
+          font-size: 2.1rem;
+        }
+      }
+    }
+
+    .team-container {
+      grid-template-columns: 1fr;
+      .team {
+        img {
+          width: 320px;
+          height: 220px;
+        }
+
+        p {
+          width: 300px;
+          font-size: 1.1rem;
+        }
+      }
+    }
+  }
+}

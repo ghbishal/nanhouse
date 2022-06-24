@@ -1,0 +1,50 @@
+.btn-container {
+  // margin-bottom: 4rem;
+  bottom: 0;
+  padding: 20px 25px;
+  display: flex;
+  justify-content: center;
+  // position: fixed;
+
+  .filter-btn {
+    background-color: transparent;
+    border-color: transparent;
+    font-size: 1.5rem;
+    text-transform: capitalize;
+    margin-right: 30px;
+    // letter-spacing: 1px;
+    padding: 6px 0;
+    color: var(--color-white);
+    cursor: pointer;
+    transition: all 0.3s linear;
+    border-radius: 4px;
+    font-family: "Averia Serif Libre", cursive;
+    font-weight: 700;
+    border-bottom: 2px solid transparent;
+
+    &:nth-child(5) {
+      margin-right: 0;
+    }
+
+    &:hover {
+      border-bottom: 2px solid var(--color-orange);
+    }
+
+    &.active {
+      color: var(--color-orange);
+      border-bottom: 2px solid var(--color-orange);
+    }
+  }
+}
+
+/* ==================== MEDIA QUERY ==================*/
+
+@media screen and (max-width: 580px) {
+  .btn-container {
+    .filter-btn {
+      margin-right: 20px;
+      font-size: 1rem;
+      border-bottom: 2px solid transparent;
+    }
+  }
+}

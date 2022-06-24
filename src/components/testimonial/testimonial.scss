@@ -1,0 +1,96 @@
+.testimonial-container {
+  background-image: url(../../assets/bgimg/bgTestiomonial.png);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  // width: 100%;
+  // height: 450px;
+  .container {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 60px 0;
+    h1 {
+      // padding-top: 50px;
+      text-align: center;
+      font-family: "Pacifico", cursive;
+      font-size: 2.5rem;
+      color: var(--color-yellow);
+      line-height: 1.2;
+    }
+
+    h2 {
+      font-family: "Averia Serif Libre", cursive;
+      text-align: center;
+
+      font-weight: 700;
+      font-size: 1.2rem;
+      color: var(--color-white);
+      text-transform: uppercase;
+      padding-top: 10px;
+    }
+    .swiper-pagination-clickable .swiper-pagination-bullet {
+      background: var(--color-yellow);
+    }
+
+    .container-items {
+      margin-top: 20px;
+      background: #212529c2;
+      width: 550px;
+      border-radius: 80px;
+
+      .testimonial {
+        padding: 30px;
+        border-radius: 2rem;
+        user-select: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        .avatar {
+          width: 90px;
+          aspect-ratio: 1/1;
+          overflow: hidden;
+          border-radius: 50%;
+          margin: 0 auto;
+          border: 2px solid var(--color-yellow);
+        }
+
+        .name {
+          font-family: "Averia Serif Libre", cursive;
+          font-weight: 600;
+          font-size: 1.2rem;
+          color: var(--color-orange);
+          text-transform: uppercase;
+          padding-top: 15px;
+        }
+
+        h2 {
+          color: var(--color-white);
+          font-weight: 400;
+          font-family: "Noto Serif JP", serif;
+          font-size: 0.7rem;
+          text-transform: capitalize;
+          letter-spacing: 1px;
+          line-height: 1.5;
+        }
+      }
+    }
+  }
+}
+
+/* ==================== MEDIA QUERY ==================*/
+
+@media screen and (max-width: 580px) {
+  .testimonial-container {
+    .container {
+      .container-items {
+        width: auto;
+        margin: 20px;
+
+        .testimonial {
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,200 @@
+.contactus-container {
+  margin-bottom: 50px;
+  .location-container {
+    max-width: var(--container-width-exlg);
+    margin: 0 auto;
+    .location-header {
+      margin: 50px 0 20px;
+      h1 {
+        text-align: center;
+        font-family: "Pacifico", cursive;
+        font-size: 2.8rem;
+        color: var(--color-yellow);
+        line-height: 1.2;
+      }
+
+      h2 {
+        font-family: "Averia Serif Libre", cursive;
+        text-align: center;
+        font-weight: 700;
+        font-size: 2rem;
+        color: var(--color-black);
+        text-transform: uppercase;
+        padding-top: 10px;
+      }
+
+      .divider {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 5px 0;
+        z-index: -1;
+
+        .left,
+        .right {
+          padding: 1px 20px;
+          border-radius: 4px;
+          background: var(--color-orange);
+        }
+
+        .spoonFork {
+          color: var(--color-orange);
+          font-size: 2rem;
+          margin: 0 10px;
+        }
+      }
+    }
+
+    .locations {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .location {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 20px 10px;
+        padding: 10px;
+        width: 280px;
+        height: 440px;
+        border-radius: 15px;
+        border: 1px solid var(--color-gray-light);
+        -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
+        box-shadow: 2px 2px 10px 1px rgba(201, 201, 201, 0.47);
+        .name-address {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          h1 {
+            color: var(--color-orange);
+            font-weight: 700;
+            font-family: "Noto Serif JP", serif;
+            font-size: 1.8rem;
+            letter-spacing: 1px;
+          }
+          .divider {
+            display: flex;
+            align-items: center;
+            margin: 5px 0;
+            z-index: -1;
+            .left,
+            .right {
+              padding: 1px 15px;
+              border-radius: 4px;
+              background: var(--color-orange);
+            }
+
+            .spoonFork {
+              color: var(--color-orange);
+              font-size: 1rem;
+              margin: 0 10px;
+            }
+            margin-bottom: 20px;
+          }
+
+          h2 {
+            color: var(--color-gray);
+            font-family: "Noto Serif JP", serif;
+            font-size: 0.8rem;
+            text-align: center;
+            width: 150px;
+
+            letter-spacing: 1px;
+          }
+          margin-bottom: 20px;
+        }
+
+        .open-hours {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          margin-bottom: 20px;
+          h1 {
+            color: var(--color-black);
+            font-weight: 700;
+            font-family: "Noto Serif JP", serif;
+            letter-spacing: 1px;
+            margin-bottom: 5px;
+          }
+
+          .hours {
+            display: flex;
+            align-items: center;
+
+            h1 {
+              color: var(--color-gray);
+              padding-right: 5px;
+              font-size: 0.8rem;
+            }
+            h2 {
+              font-weight: 300;
+              font-family: "Noto Serif JP", serif;
+              color: var(--color-gray);
+              font-size: 0.8rem;
+              letter-spacing: 0.8px;
+            }
+          }
+        }
+
+        .contact-us {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          h1 {
+            color: var(--color-black);
+            font-weight: 700;
+            font-family: "Noto Serif JP", serif;
+            font-size: 1.4rem;
+            letter-spacing: 1px;
+            margin-bottom: 5px;
+          }
+          h2 {
+            font-weight: 300;
+            font-family: "Noto Serif JP", serif;
+            color: var(--color-gray);
+            font-size: 1rem;
+            letter-spacing: 1px;
+          }
+
+          margin-bottom: 20px;
+        }
+
+        .direction {
+          display: flex;
+          justify-content: center;
+          color: var(--color-black);
+          font-weight: 800;
+          font-family: "Noto Serif JP", serif;
+          font-size: 1.2rem;
+          letter-spacing: 1px;
+          margin-bottom: 5px;
+          overflow: hidden;
+          text-decoration: underline;
+
+          &:hover {
+            color: var(--color-orange);
+          }
+          .arrow {
+            font-size: 2rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* ==================== MEDIA QUERY ==================*/
+
+@media screen and (max-width: 690px) {
+  .contactus-container {
+    .location-container {
+      .locations {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+  }
+}

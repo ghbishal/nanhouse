@@ -1,0 +1,355 @@
+.aboutUs {
+  .ourStory {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    max-width: var(--container-width-exlg);
+    margin: 0 auto;
+    z-index: -1;
+    padding: 90px 0;
+    overflow: hidden;
+
+    h1,
+    h2 {
+      text-align: center;
+      font-family: "Pacifico", cursive;
+      text-transform: capitalize;
+      font-size: 3rem;
+      color: var(--color-yellow);
+    }
+
+    h2 {
+      font-family: "Averia Serif Libre", cursive;
+      font-weight: 700;
+      font-size: 2.5rem;
+      letter-spacing: 2px;
+      color: var(--color-black);
+    }
+
+    .divider {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 5px 0;
+      z-index: -1;
+
+      .left,
+      .right {
+        padding: 1px 30px;
+        border-radius: 4px;
+        background: var(--color-orange);
+      }
+
+      .spoonFork {
+        color: var(--color-orange);
+        font-size: 2rem;
+        margin: 0 10px;
+      }
+    }
+
+    /* ==================== PHOTO CSS ================== */
+
+    .story {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+      // z-index: -1;
+
+      .storyLine {
+        width: 650px;
+
+        p {
+          color: var(--color-gray);
+          font-family: "Crimson Pro", serif;
+          font-size: 1.6rem;
+          padding: 10px;
+          line-height: 1.2;
+        }
+      }
+
+      .storyName {
+        width: 580px;
+        height: 370px;
+        object-fit: fill;
+        float: right;
+        padding: 10px;
+      }
+    }
+  }
+
+  .specialMenu {
+    background-image: url(../../assets/bgimg/bgChef.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    background-size: cover;
+    width: 100%;
+    height: 700px;
+
+    .specialMenu-container {
+      background: rgba(0, 0, 0, 0.5);
+      width: 100%;
+      height: 700px;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+
+      .menuHeader {
+        padding: 20px 0;
+
+        h1,
+        h2 {
+          text-align: center;
+          font-family: "Pacifico", cursive;
+          font-size: 2.8rem;
+          color: var(--color-yellow);
+          line-height: 1.2;
+        }
+
+        h2 {
+          font-family: "Averia Serif Libre", cursive;
+          // font-weight: 700;
+          font-size: 1.5rem;
+          color: var(--color-white);
+          // text-transform: uppercase;
+          padding-top: 10px;
+        }
+
+        .divider {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin: 5px 0;
+          z-index: -1;
+
+          .left,
+          .right {
+            padding: 1px 30px;
+            border-radius: 4px;
+            background: var(--color-orange);
+          }
+
+          .spoonFork {
+            color: var(--color-orange);
+            font-size: 2rem;
+            margin: 0 10px;
+          }
+        }
+      }
+
+      .menu-container {
+        // max-width: var(--container-width-sm);
+        width: 100%;
+        padding: 10px;
+        padding-bottom: 60px;
+        // background-color: aqua;
+        margin: 0 auto;
+        cursor: pointer;
+
+        .swiper-pagination .swiper-pagination-bullet {
+          background: var(--color-white);
+        }
+
+        .container {
+          width: 220px;
+          height: 360px;
+          border-radius: 30px;
+          // padding: 0 10px;
+
+          .menu {
+            background: var(--color-white);
+            text-align: center;
+            width: 220px;
+            height: 360px;
+            border: 1px solid var(--color-white);
+            border-radius: 30px;
+
+            &:hover {
+              transform: scale(0.99);
+            }
+
+            .food-photo {
+              overflow: hidden;
+              border-radius: 30px;
+              margin: 5px;
+              height: 150px;
+              display: flex;
+              // border: 1px solid orange;
+            }
+
+            .foodLable {
+              border-top: 3px solid #f5f5f5;
+
+              h5 {
+                font-size: 1.2rem;
+                padding: 15px 0 0 0;
+                color: var(--color-black);
+                font-family: "Averia Serif Libre", cursive;
+                font-weight: 700;
+              }
+
+              small {
+                font-family: "Crimson Pro", serif;
+                font-size: 1.1rem;
+              }
+
+              h1 {
+                padding-top: 10px;
+                font-family: "Crimson Pro", serif;
+                font-size: 2.5rem;
+                font-weight: 700;
+                color: var(--color-orange);
+              }
+
+              .divider {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin: 5px 0;
+
+                .left,
+                .right {
+                  padding: 1px 30px;
+                  border-radius: 4px;
+                  background: var(--color-orange);
+                }
+
+                .spoonFork {
+                  color: var(--color-orange);
+                  font-size: 1rem;
+                  margin: 0 10px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/* ==================== MEDIA QUERY ==================*/
+
+@media screen and (max-width: 1300px) {
+  .aboutUs {
+    .ourStory {
+      .story {
+        .storyLine {
+          width: 620px;
+        }
+
+        .storyName {
+          width: 540px;
+          height: 340px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1230px) {
+  .aboutUs {
+    .ourStory {
+      .story {
+        .storyLine {
+          width: 570px;
+
+          p {
+            font-size: 1.3rem;
+          }
+        }
+
+        .storyName {
+          width: 470px;
+          height: 300px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .aboutUs {
+    .ourStory {
+      .story {
+        display: flex;
+        flex-direction: column;
+
+        .storyLine {
+          p {
+            font-size: 1.3rem;
+          }
+        }
+
+        .storyName {
+          width: 470px;
+          height: 300px;
+          margin-top: 20px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 690px) {
+  .aboutUs {
+    .ourStory {
+      .story {
+        .storyLine {
+          width: auto;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .aboutUs {
+    .ourStory {
+      h1 {
+        font-size: 2.1rem;
+        // letter-spacing: 0px;
+      }
+
+      h2 {
+        font-size: 2rem;
+        letter-spacing: 0px;
+      }
+
+      .story {
+        .storyName {
+          width: 340px;
+          margin-top: 20px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .aboutUs {
+    .ourStory {
+      h1 {
+        font-size: 2rem;
+        // letter-spacing: 0px;
+      }
+
+      h2 {
+        font-size: 1.9rem;
+        letter-spacing: 0px;
+      }
+
+      .story {
+        .storyName {
+          width: 330px;
+          margin-top: 20px;
+        }
+      }
+    }
+  }
+}

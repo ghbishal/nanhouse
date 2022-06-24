@@ -1,0 +1,271 @@
+.menu-container {
+  .ourServices {
+    .bgimage {
+      // background: #f5f5f5;
+      padding: 50px 0;
+
+      .header {
+        h1,
+        h2 {
+          text-align: center;
+          font-family: "Pacifico", cursive;
+          font-size: 2.8rem;
+          color: var(--color-yellow);
+          line-height: 1.2;
+        }
+
+        h2 {
+          font-family: "Averia Serif Libre", cursive;
+          // font-weight: 700;
+          font-size: 1.5rem;
+          color: var(--color-black);
+          // text-transform: uppercase;
+          padding-top: 10px;
+        }
+
+        .divider {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin: 5px 0;
+          z-index: -1;
+
+          .left,
+          .right {
+            padding: 1px 30px;
+            border-radius: 4px;
+            background: var(--color-orange);
+          }
+
+          .spoonFork {
+            color: var(--color-orange);
+            font-size: 2rem;
+            margin: 0 10px;
+          }
+        }
+      }
+
+      margin: 0 auto;
+
+      .services {
+        max-width: var(--container-width-exlg);
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        // gap: 4px;
+        cursor: pointer;
+        padding-bottom: 30px;
+
+        .container {
+          position: relative;
+          padding: 20px;
+
+          .card {
+            position: relative;
+            width: 160px;
+            height: 190px;
+            background: rgba(0, 0, 0, 0.8);
+            border-radius: 20px;
+            overflow: hidden;
+
+            &::before {
+              content: "";
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 100%;
+              background-color: var(--color-orange);
+              clip-path: circle(110px at 80% 10%);
+              transition: var(--transition);
+            }
+
+            &:hover::before {
+              clip-path: circle(160px at 80% -10%);
+            }
+
+            &::after {
+              content: "NH";
+              position: absolute;
+              top: 30%;
+              font-size: 8rem;
+              font-family: "Crimson Pro", serif;
+              font-weight: 700;
+              font-style: italic;
+              color: rgba(255, 255, 255, 0.04);
+            }
+
+            &:hover .imgbox {
+              top: 2%;
+              transform: translateY(0%);
+            }
+
+            .imgbox {
+              position: absolute;
+              top: 70%;
+              left: 20%;
+              transform: translateY(-50%);
+              z-index: 1;
+              width: 100%;
+              height: 220px;
+              transition: 0.5s;
+
+              .img {
+                font-size: 6rem;
+                color: var(--color-white);
+                top: 50%;
+                left: 50%;
+              }
+            }
+
+            &:hover .contextBox {
+              height: 100px;
+            }
+
+            .contextBox {
+              position: absolute;
+              bottom: 0;
+              width: 100%;
+              height: 60px;
+              text-align: center;
+              transition: 1s;
+              z-index: 2;
+
+              h2 {
+                position: relative;
+                font-family: "Crimson Pro", serif;
+                font-weight: 600;
+                font-size: 2.3rem;
+                color: var(--color-white);
+              }
+
+              a {
+                display: inline-block;
+                padding: 6px 12px;
+                background-color: var(--color-orange);
+                border-radius: 10px;
+                margin-top: 5px;
+                text-decoration: none;
+                font-weight: 600;
+                font-family: "Crimson Pro", serif;
+                font-size: 1.4rem;
+                border: 3px solid var(--color-white);
+                color: var(--color-white);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .menuSlogan {
+    background-image: url(../../assets/bgimg/curry.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    height: 450px;
+
+    .slogan {
+      background: rgba(0, 0, 0, 0.5);
+      height: 450px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+      align-items: center;
+      padding: 10px;
+      position: relative;
+
+      .categories-section {
+        position: absolute;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.6);
+        border-radius: 20px;
+        margin-bottom: 5px;
+      }
+
+      h1,
+      h2 {
+        text-align: center;
+        font-family: "Pacifico", cursive;
+        font-size: 2.8rem;
+        color: var(--color-yellow);
+        line-height: 1.2;
+      }
+
+      h2 {
+        font-family: "Averia Serif Libre", cursive;
+        font-weight: 700;
+        font-size: 1.5rem;
+        color: var(--color-white);
+        // text-transform: uppercase;
+        padding-top: 10px;
+      }
+
+      .divider {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 5px 0;
+        // z-index: -1;
+
+        .left,
+        .right {
+          padding: 1px 30px;
+          border-radius: 4px;
+          background: var(--color-orange);
+        }
+
+        .spoonFork {
+          color: var(--color-orange);
+          font-size: 2rem;
+          margin: 0 10px;
+        }
+      }
+    }
+  }
+
+  .menu-items {
+    background-color: aqua;
+  }
+}
+
+/* ==================== MEDIA QUERY ==================*/
+
+@media screen and (max-width: 1065px) {
+  .menu-container {
+    .ourServices {
+      .bgimage {
+        .services {
+          .container {
+            padding: 10px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .menu-container {
+    .ourServices {
+      .bgimage {
+        .services {
+          display: grid;
+          grid-template-columns: repeat(2, 2fr);
+          padding: 10px;
+
+          .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,106 @@
+.home {
+  .imgSwiper {
+    height: auto;
+    z-index: -1;
+
+    img {
+      width: 100%;
+      height: 100vh;
+      object-fit: cover;
+    }
+  }
+
+  .home-logo {
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.5);
+
+    img {
+      margin-top: 100px;
+      width: 490px;
+      height: 460px;
+      border-radius: 30%;
+      animation: bounceIn 10s;
+      animation-iteration-count: infinite;
+    }
+
+    h1 {
+      font-family: "Great Vibes", cursive;
+      text-transform: capitalize;
+      text-align: center;
+      font-size: 3rem;
+      font-weight: bold;
+      letter-spacing: 0.8px;
+      color: var(--color-yellow);
+      text-shadow: 3px 3px 3px #b0b1aca1;
+      margin: 40px 0 10px;
+      animation: bounceIn 10s;
+      animation-iteration-count: infinite;
+    }
+  }
+}
+
+/* ==================== MEDIA QUERY ==================*/
+
+@media screen and (max-width: 1100px) {
+  .home {
+    .home-logo {
+      img {
+        width: 480px;
+        height: 450px;
+      }
+
+      h1 {
+        font-size: 3.5rem;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .home {
+    .home-logo {
+      img {
+        width: 480px;
+        height: 450px;
+      }
+
+      h1 {
+        font-size: 3.5rem;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 690px) {
+  .home {
+    .home-logo {
+      h1 {
+        font-size: 3rem;
+        margin: 30px 0 10px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .home {
+    .home-logo {
+      img {
+        width: 300px;
+        height: 280px;
+      }
+
+      h1 {
+        font-size: 2.2rem;
+      }
+    }
+  }
+}

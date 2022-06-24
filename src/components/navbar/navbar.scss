@@ -1,0 +1,313 @@
+.navbar {
+  position: fixed;
+  display: flex;
+  top: 0;
+  justify-content: center;
+  width: 100%;
+  transition: 0.4s ease-out;
+  z-index: 999999;
+
+  &.scrolled {
+    height: 115px;
+    background: rgba(0, 0, 0, 0.8);
+  }
+
+  .nav-container {
+    width: var(--container-width-exlg);
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    img {
+      width: 200px;
+      height: 100px;
+      padding: 10px;
+      margin-right: 20px;
+    }
+
+    .checkbox-btn {
+      display: none;
+    }
+
+    .menu-icon {
+      position: relative;
+      padding: 16px 12px;
+      cursor: pointer;
+      z-index: 1;
+      border: 1px solid var(--color-white);
+      border-radius: 5px;
+      display: none;
+      background-color: var(--color-orange);
+      float: right;
+
+      &__line {
+        display: block;
+        position: relative;
+        background: var(--color-white);
+        height: 3px;
+        width: 20px;
+        border-radius: 4px;
+        transition: background 0.9s ease;
+
+        &::before,
+        &::after {
+          content: "";
+          position: absolute;
+          height: 100%;
+          width: 100%;
+          border-radius: 4px;
+          background: var(--color-white);
+          transition: background 0.9s ease;
+        }
+
+        &::before {
+          transform: translateY(-5px);
+        }
+
+        &::after {
+          transform: translateY(5px);
+        }
+      }
+    }
+
+    .navItems {
+      display: flex;
+      align-items: center;
+      // background-color: aqua;
+
+      .items {
+        position: relative;
+        margin-right: 30px;
+        font-size: 1rem;
+        font-weight: 700;
+        line-height: 1.5;
+        letter-spacing: 0.8px;
+        color: var(--color-white);
+        transition: var(--transition);
+
+        &::before {
+          content: "";
+          position: absolute;
+          bottom: 0;
+          left: 50%;
+          width: 0;
+          height: 2px;
+          background: var(--color-orange);
+          transition: var(--transition);
+        }
+
+        &:hover {
+          color: var(--color-orange);
+          // border-bottom: 1px solid var(--color-orange);
+        }
+
+        &:hover::before {
+          width: 100%;
+          left: 0;
+        }
+
+        &.active {
+          color: var(--color-orange);
+        }
+
+        &:last-child {
+          margin-right: 0px;
+        }
+      }
+
+      .login {
+        a {
+          font-size: 1rem;
+          font-weight: 700;
+          line-height: 1.5;
+          border: 1px solid var(--color-white);
+          border-radius: 10px;
+          padding: 12px 20px;
+          letter-spacing: 0.8px;
+          background-color: var(--color-orange);
+          color: var(--color-white);
+          transition: var(--transition);
+          text-transform: uppercase;
+
+          &:hover {
+            background-color: var(--color-white);
+            color: var(--color-orange);
+            border: 1px solid var(--color-orange);
+          }
+        }
+      }
+    }
+  }
+}
+
+/* ==================== MEDIA QUERY ==================*/
+
+@media screen and (max-width: 1200px) {
+  .navbar {
+    .nav-container {
+      img {
+        width: 160px;
+        height: 80px;
+      }
+
+      .navItems {
+        .items {
+          // margin-right: 10px;
+          // font-size: 0.9rem;
+        }
+
+        .login {
+          a {
+            // font-size: 0.9rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1065px) {
+  .navbar {
+    .nav-container {
+      img {
+        width: 160px;
+        height: 80px;
+        margin-right: 5px;
+      }
+
+      .navItems {
+        .items {
+          margin-right: 10px;
+          font-size: 0.9rem;
+        }
+
+        .login {
+          a {
+            font-size: 0.9rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .navbar {
+    .nav-container {
+      .menu-icon {
+        display: block;
+
+        &__line {
+          animation: closedMind 0.8s backwards;
+          animation-direction: reverse;
+
+          &::before {
+            animation: closedTop 0.8s backwards;
+            animation-direction: reverse;
+          }
+
+          &::after {
+            animation: closedBtm 0.8s backwards;
+            animation-direction: reverse;
+          }
+        }
+      }
+
+      .navItems {
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 100vw;
+        height: 100vh;
+        padding: 100px 0;
+        background-color: rgba(0, 0, 0, 0.9);
+        transition: opacity 0.7s 0.4s, clip-path 1s 0.4s;
+        clip-path: circle(250px at top right);
+
+        .items,
+        .login {
+          font-size: 1.4rem;
+          letter-spacing: 2px;
+          margin-right: 0;
+          opacity: 0;
+          transform: translateX(100%);
+          // width: 100%;
+          text-align: center;
+        }
+
+        .login {
+          a {
+            font-size: 1.2rem;
+            padding: 15px 50px;
+          }
+        }
+      }
+
+      .checkbox-btn:checked ~ .navItems {
+        opacity: 1;
+        clip-path: circle(100% at center);
+
+        .items {
+          opacity: 1;
+          transform: translateX(0);
+          transition: opacity 0.4s ease-in-out,
+            transform 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+
+          &:nth-of-type(1) {
+            transition-delay: 0.8s;
+          }
+
+          &:nth-of-type(2) {
+            transition-delay: 1s;
+          }
+
+          &:nth-of-type(3) {
+            transition-delay: 1.2s;
+          }
+
+          &:nth-of-type(4) {
+            transition-delay: 1.4s;
+          }
+
+          &:nth-of-type(5) {
+            transition-delay: 1.6s;
+          }
+
+          &:nth-of-type(6) {
+            transition-delay: 1.8s;
+          }
+        }
+
+        .login {
+          opacity: 1;
+          transform: translateX(0);
+          transition: opacity 0.4s ease-in-out 2s,
+            transform 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275) 2s;
+        }
+      }
+    }
+
+    .checkbox-btn:checked ~ .menu-icon {
+      border-radius: 50%;
+      animation: pulse 1s;
+
+      .menu-icon__line {
+        animation: openMid 0.8s forwards;
+
+        &::before {
+          animation: openTop 0.8s forwards;
+        }
+
+        &::after {
+          animation: openBtm 0.8s forwards;
+        }
+      }
+    }
+  }
+}
