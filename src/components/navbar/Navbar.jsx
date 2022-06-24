@@ -1,6 +1,6 @@
 import "./navbar.scss";
 import LOGO from "../../assets/whitelogo.png";
-import { useEffect, useState } from "react";
+import {useEffect, useState} from "react";
 
 const Navbar = () => {
   const [scroll, setScroll] = useState(false);
@@ -17,7 +17,7 @@ const Navbar = () => {
     <nav className={scroll ? "navbar scrolled" : "navbar"}>
       <div className="nav-container">
         <div className="logo">
-          <a href="/">
+          <a href="home">
             <img src={LOGO} alt="" />
           </a>
         </div>
@@ -101,7 +101,7 @@ const Navbar = () => {
           </a>
           <div className="login">
             <a
-              href="#"
+              href="#home"
               onClick={() => {
                 setChecked((old) => !old);
               }}
