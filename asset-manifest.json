@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/nanhouse/static/css/main.01d1e7dd.css",
-    "main.js": "/nanhouse/static/js/main.b21b96dc.js",
+    "main.js": "/nanhouse/static/js/main.584f2688.js",
     "static/media/currynanset.jpg": "/nanhouse/static/media/currynanset.af4e3c3f506365ed82dc.jpg",
     "static/media/nancurry.jpg": "/nanhouse/static/media/nancurry.0dd3dde0f29e74ce0529.jpg",
     "static/media/chickenchiilli.jpg": "/nanhouse/static/media/chickenchiilli.dbbd0510c5f725db2bb2.jpg",
@@ -32,10 +32,10 @@
     "static/media/samosa.jpg": "/nanhouse/static/media/samosa.a3c5ed25ceeda51607af.jpg",
     "index.html": "/nanhouse/index.html",
     "main.01d1e7dd.css.map": "/nanhouse/static/css/main.01d1e7dd.css.map",
-    "main.b21b96dc.js.map": "/nanhouse/static/js/main.b21b96dc.js.map"
+    "main.584f2688.js.map": "/nanhouse/static/js/main.584f2688.js.map"
   },
   "entrypoints": [
     "static/css/main.01d1e7dd.css",
-    "static/js/main.b21b96dc.js"
+    "static/js/main.584f2688.js"
   ]
 }
