@@ -1,13 +1,14 @@
 {
   "files": {
-    "main.css": "/nanhouse/static/css/main.661511ba.css",
-    "main.js": "/nanhouse/static/js/main.0c9a1301.js",
+    "main.css": "/nanhouse/static/css/main.e4089a86.css",
+    "main.js": "/nanhouse/static/js/main.663a0f30.js",
     "static/media/currynanset.jpg": "/nanhouse/static/media/currynanset.af4e3c3f506365ed82dc.jpg",
+    "static/media/Gen Jyuu Gothic Monospace Bold.ttf": "/nanhouse/static/media/Gen Jyuu Gothic Monospace Bold.46d1353d8872b91e0709.ttf",
+    "static/media/Gen Jyuu Gothic Monospace Light.ttf": "/nanhouse/static/media/Gen Jyuu Gothic Monospace Light.58b3ef115c31015260b8.ttf",
     "static/media/nancurry.jpg": "/nanhouse/static/media/nancurry.0dd3dde0f29e74ce0529.jpg",
     "static/media/chickenchiilli.jpg": "/nanhouse/static/media/chickenchiilli.dbbd0510c5f725db2bb2.jpg",
     "static/media/mummy.png": "/nanhouse/static/media/mummy.00dc5df19e22609aa9f3.png",
     "static/media/momo.jpg": "/nanhouse/static/media/momo.1fa585683accbfaddee6.jpg",
-    "static/media/bgTestiomonial.png": "/nanhouse/static/media/bgTestiomonial.965e555f662d2d9f1909.png",
     "static/media/setPic.jpg": "/nanhouse/static/media/setPic.db9dbe79287d063a51fe.jpg",
     "static/media/tandoorichicken2pc.JPG": "/nanhouse/static/media/tandoorichicken2pc.938ec8d81457822a7fe6.JPG",
     "static/media/chickentikka6pc.JPG": "/nanhouse/static/media/chickentikka6pc.ef45bf55bc885f996696.JPG",
@@ -26,18 +27,23 @@
     "static/media/chickencurry.jpg": "/nanhouse/static/media/chickencurry.8633108fa28ddb467226.jpg",
     "static/media/chickenkeemacurry.jpg": "/nanhouse/static/media/chickenkeemacurry.0dd0fa3870ea208096e9.jpg",
     "static/media/tandoorUncle.jpg": "/nanhouse/static/media/tandoorUncle.7b1fdfdea2d47b2694e1.jpg",
-    "static/media/bgChef.jpg": "/nanhouse/static/media/bgChef.ebc79c136a9d6f3e3396.jpg",
+    "static/media/bgTestiomonial.jpg": "/nanhouse/static/media/bgTestiomonial.aaaeb95eef4e3f0172a3.jpg",
+    "static/media/premprasadkandel.jpg": "/nanhouse/static/media/premprasadkandel.215fdccd7ca6b45323bd.jpg",
     "static/media/vegetablechowmin.jpg": "/nanhouse/static/media/vegetablechowmin.3ba0bdf0d0ddea79b97e.jpg",
+    "static/media/HCNset.jpg": "/nanhouse/static/media/HCNset.d4ed95ca9d7861a39153.jpg",
+    "static/media/bgChef.jpg": "/nanhouse/static/media/bgChef.6d047d0adfa0a2617c87.jpg",
+    "static/media/Butterchickenset.jpg": "/nanhouse/static/media/Butterchickenset.e99d6cf9fd3eab3ec238.jpg",
     "static/media/GapaoRiceSet.jpg": "/nanhouse/static/media/GapaoRiceSet.7950498bb4a1ff4f78cb.jpg",
     "static/media/garlicnan.jpeg": "/nanhouse/static/media/garlicnan.926ef28a47d8b44b3009.jpeg",
     "static/media/keemacheesenan.jpeg": "/nanhouse/static/media/keemacheesenan.9b3f7ba5a91e7a478fb8.jpeg",
     "static/media/samosa.jpg": "/nanhouse/static/media/samosa.a3c5ed25ceeda51607af.jpg",
+    "static/media/briyaniset.jpg": "/nanhouse/static/media/briyaniset.fd0495fab0e01cb4358d.jpg",
     "index.html": "/nanhouse/index.html",
-    "main.661511ba.css.map": "/nanhouse/static/css/main.661511ba.css.map",
-    "main.0c9a1301.js.map": "/nanhouse/static/js/main.0c9a1301.js.map"
+    "main.e4089a86.css.map": "/nanhouse/static/css/main.e4089a86.css.map",
+    "main.663a0f30.js.map": "/nanhouse/static/js/main.663a0f30.js.map"
   },
   "entrypoints": [
-    "static/css/main.661511ba.css",
-    "static/js/main.0c9a1301.js"
+    "static/css/main.e4089a86.css",
+    "static/js/main.663a0f30.js"
   ]
 }
