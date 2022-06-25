@@ -7,6 +7,9 @@ import {Zoom, Fade} from "react-reveal";
 import LocalDiningIcon from "@mui/icons-material/LocalDining";
 import KeyboardDoubleArrowRightIcon from "@mui/icons-material/KeyboardDoubleArrowRight";
 import StoreIcon from "@mui/icons-material/Store";
+import PhoneIcon from "@mui/icons-material/Phone";
+import EmailIcon from "@mui/icons-material/Email";
+import FacebookOutlinedIcon from "@mui/icons-material/FacebookOutlined";
 
 const Contactus = () => {
   return (
@@ -193,44 +196,37 @@ const Contactus = () => {
               </div>
               <div className="element">
                 <i className="icon-container">
-                  <StoreIcon className="icon" />
+                  <PhoneIcon className="icon" />
                 </i>
-                <h1>住所</h1>
-                <a
-                  href="https://www.google.com/maps/dir/35.4767337,140.0495734/%E3%80%92299-0111+%E5%8D%83%E8%91%89%E7%9C%8C%E5%B8%82%E5%8E%9F%E5%B8%82%E5%A7%89%E5%B4%8E%EF%BC%97%EF%BC%92%EF%BC%99%E2%88%92%EF%BC%93+%E3%83%8A%E3%83%B3%E3%83%8F%E3%82%A6%E3%82%B9/@35.4788162,140.0441912,17z/data=!3m1!4b1!4m10!4m9!1m1!4e1!1m5!1m1!1s0x60229e418807ad7f:0xa289976e78085069!2m2!1d140.0444581!2d35.4821689!3e0?hl=ja"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  〒299-0111 千葉県市原市姉崎 <br />
-                  ７２９−３ ナンハウス
+                <h1>電話</h1>
+                <a href="tel:+81-04-3661-6442" target="_blank" rel="noreferrer">
+                  +81-04-3661-6442
                 </a>
               </div>
               <div className="element">
                 <i className="icon-container">
-                  <StoreIcon className="icon" />
+                  <EmailIcon className="icon" />
                 </i>
-                <h1>住所</h1>
+                <h1>メイル</h1>
                 <a
-                  href="https://www.google.com/maps/dir/35.4767337,140.0495734/%E3%80%92299-0111+%E5%8D%83%E8%91%89%E7%9C%8C%E5%B8%82%E5%8E%9F%E5%B8%82%E5%A7%89%E5%B4%8E%EF%BC%97%EF%BC%92%EF%BC%99%E2%88%92%EF%BC%93+%E3%83%8A%E3%83%B3%E3%83%8F%E3%82%A6%E3%82%B9/@35.4788162,140.0441912,17z/data=!3m1!4b1!4m10!4m9!1m1!4e1!1m5!1m1!1s0x60229e418807ad7f:0xa289976e78085069!2m2!1d140.0444581!2d35.4821689!3e0?hl=ja"
+                  href="mailto:nanhousejapan@gmail.com"
                   target="_blank"
                   rel="noreferrer"
                 >
-                  〒299-0111 千葉県市原市姉崎 <br />
-                  ７２９−３ ナンハウス
+                  nanhousejapan@gmail.com
                 </a>
               </div>
               <div className="element">
                 <i className="icon-container">
-                  <StoreIcon className="icon" />
+                  <FacebookOutlinedIcon className="icon" />
                 </i>
-                <h1>住所</h1>
+                <h1>ページ</h1>
                 <a
-                  href="https://www.google.com/maps/dir/35.4767337,140.0495734/%E3%80%92299-0111+%E5%8D%83%E8%91%89%E7%9C%8C%E5%B8%82%E5%8E%9F%E5%B8%82%E5%A7%89%E5%B4%8E%EF%BC%97%EF%BC%92%EF%BC%99%E2%88%92%EF%BC%93+%E3%83%8A%E3%83%B3%E3%83%8F%E3%82%A6%E3%82%B9/@35.4788162,140.0441912,17z/data=!3m1!4b1!4m10!4m9!1m1!4e1!1m5!1m1!1s0x60229e418807ad7f:0xa289976e78085069!2m2!1d140.0444581!2d35.4821689!3e0?hl=ja"
+                  href="https://www.facebook.com/nanhousejp"
                   target="_blank"
                   rel="noreferrer"
                 >
-                  〒299-0111 千葉県市原市姉崎 <br />
-                  ７２９−３ ナンハウス
+                  nanhouse
                 </a>
               </div>
             </div>
