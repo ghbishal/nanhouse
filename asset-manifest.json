@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/nanhouse/static/css/main.863f9bcf.css",
-    "main.js": "/nanhouse/static/js/main.d5585533.js",
+    "main.css": "/nanhouse/static/css/main.661511ba.css",
+    "main.js": "/nanhouse/static/js/main.0c9a1301.js",
     "static/media/currynanset.jpg": "/nanhouse/static/media/currynanset.af4e3c3f506365ed82dc.jpg",
     "static/media/nancurry.jpg": "/nanhouse/static/media/nancurry.0dd3dde0f29e74ce0529.jpg",
     "static/media/chickenchiilli.jpg": "/nanhouse/static/media/chickenchiilli.dbbd0510c5f725db2bb2.jpg",
@@ -14,8 +14,8 @@
     "static/media/whitelogo.png": "/nanhouse/static/media/whitelogo.097c2217ebea06d1f1f4.png",
     "static/media/nanhouselogo.png": "/nanhouse/static/media/nanhouselogo.c8fb14009dc597f2e731.png",
     "static/media/nanhouse.jpg": "/nanhouse/static/media/nanhouse.84abdad4ab48796edbd5.jpg",
-    "static/media/bishnumama.jpg": "/nanhouse/static/media/bishnumama.cbd17c0a5d6789bb5bd1.jpg",
     "static/media/fullset.jpg": "/nanhouse/static/media/fullset.db413509339e4fa281da.jpg",
+    "static/media/bishnumama.jpg": "/nanhouse/static/media/bishnumama.0d47078a58f7ccdc301c.jpg",
     "static/media/ichigaya.jpg": "/nanhouse/static/media/ichigaya.aa365dd4c1a1e385d750.jpg",
     "static/media/curry.jpg": "/nanhouse/static/media/curry.42fa1f17290d98c84387.jpg",
     "static/media/ichigayakabab.jpg": "/nanhouse/static/media/ichigayakabab.9de5d94b73e0181d063b.jpg",
@@ -28,15 +28,16 @@
     "static/media/tandoorUncle.jpg": "/nanhouse/static/media/tandoorUncle.7b1fdfdea2d47b2694e1.jpg",
     "static/media/bgChef.jpg": "/nanhouse/static/media/bgChef.ebc79c136a9d6f3e3396.jpg",
     "static/media/vegetablechowmin.jpg": "/nanhouse/static/media/vegetablechowmin.3ba0bdf0d0ddea79b97e.jpg",
+    "static/media/GapaoRiceSet.jpg": "/nanhouse/static/media/GapaoRiceSet.7950498bb4a1ff4f78cb.jpg",
     "static/media/garlicnan.jpeg": "/nanhouse/static/media/garlicnan.926ef28a47d8b44b3009.jpeg",
     "static/media/keemacheesenan.jpeg": "/nanhouse/static/media/keemacheesenan.9b3f7ba5a91e7a478fb8.jpeg",
     "static/media/samosa.jpg": "/nanhouse/static/media/samosa.a3c5ed25ceeda51607af.jpg",
     "index.html": "/nanhouse/index.html",
-    "main.863f9bcf.css.map": "/nanhouse/static/css/main.863f9bcf.css.map",
-    "main.d5585533.js.map": "/nanhouse/static/js/main.d5585533.js.map"
+    "main.661511ba.css.map": "/nanhouse/static/css/main.661511ba.css.map",
+    "main.0c9a1301.js.map": "/nanhouse/static/js/main.0c9a1301.js.map"
   },
   "entrypoints": [
-    "static/css/main.863f9bcf.css",
-    "static/js/main.d5585533.js"
+    "static/css/main.661511ba.css",
+    "static/js/main.0c9a1301.js"
   ]
 }
