@@ -22,9 +22,10 @@ import "swiper/css/pagination";
 
 const data = [
   {
-    image: SETMENU,
-    name: "1",
-    description: "Lorem ipsum dolor sit amet consectetur",
+    image: require("../../assets/sidemenu/GapaoRiceSet.jpg"),
+    name: "ガパオライス セット",
+    description: "ガパオライス, ソフトドリンク,  サラダ",
+    price: 1090,
   },
 
   {
@@ -150,7 +151,7 @@ const Aboutus = () => {
             modules={[EffectCoverflow, Pagination, Autoplay]}
             className="menu-container"
           >
-            {data.map(({image, name, description}, index) => {
+            {data.map(({image, name, description, price}, index) => {
               return (
                 <SwiperSlide key={index} className="container">
                   <div className="menu">
@@ -168,7 +169,7 @@ const Aboutus = () => {
 
                       <h1>
                         <CurrencyYenRoundedIcon className="yen" />
-                        500
+                        {price}
                       </h1>
                     </div>
                   </div>
