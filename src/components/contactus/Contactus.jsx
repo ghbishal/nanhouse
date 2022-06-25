@@ -11,7 +11,34 @@ import PhoneIcon from "@mui/icons-material/Phone";
 import EmailIcon from "@mui/icons-material/Email";
 import FacebookOutlinedIcon from "@mui/icons-material/FacebookOutlined";
 
+import {useRef} from "react";
+import emailjs from "emailjs-com";
+
 const Contactus = () => {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_234f5oj",
+        "template_zzbxy7y",
+        form.current,
+        "VM9x5CufUB2MLxG1C"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+
+    e.target.reset();
+  };
+
   return (
     <section id="contactus" className="contactus-container">
       <div className="location-container">
@@ -160,7 +187,7 @@ const Contactus = () => {
           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1931.8032005052496!2d140.04475811792753!3d35.48219674832178!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60229e418807ad7f%3A0xa289976e78085069!2z44OK44Oz44OP44Km44K5!5e0!3m2!1sja!2sjp!4v1656065845903!5m2!1sja!2sjp"></iframe>
         </div>
         <div className="contactus-form">
-          <form action="">
+          <form ref={form} onSubmit={sendEmail}>
             <input type="text" name="name" placeholder="ナンハウス" required />
             <input
               type="email"
@@ -168,7 +195,7 @@ const Contactus = () => {
               placeholder="nanhousejp@gmail.com"
               required
             />
-            <input type="text" name="phoneno" placeholder="080 - 1234 - 4567" />
+            <input type="text" name="phone" placeholder="080 - 1234 - 4567" />
             <textarea
               name="message"
               placeholder="メッセージ"
@@ -181,9 +208,14 @@ const Contactus = () => {
           <div className="contact-element">
             <div className="element-container">
               <div className="element">
-                <i className="icon-container">
+                <a
+                  href="https://www.google.com/maps/dir/35.4767337,140.0495734/%E3%80%92299-0111+%E5%8D%83%E8%91%89%E7%9C%8C%E5%B8%82%E5%8E%9F%E5%B8%82%E5%A7%89%E5%B4%8E%EF%BC%97%EF%BC%92%EF%BC%99%E2%88%92%EF%BC%93+%E3%83%8A%E3%83%B3%E3%83%8F%E3%82%A6%E3%82%B9/@35.4788162,140.0441912,17z/data=!3m1!4b1!4m10!4m9!1m1!4e1!1m5!1m1!1s0x60229e418807ad7f:0xa289976e78085069!2m2!1d140.0444581!2d35.4821689!3e0?hl=ja"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="icon-container"
+                >
                   <StoreIcon className="icon" />
-                </i>
+                </a>
                 <h1>住所</h1>
                 <a
                   href="https://www.google.com/maps/dir/35.4767337,140.0495734/%E3%80%92299-0111+%E5%8D%83%E8%91%89%E7%9C%8C%E5%B8%82%E5%8E%9F%E5%B8%82%E5%A7%89%E5%B4%8E%EF%BC%97%EF%BC%92%EF%BC%99%E2%88%92%EF%BC%93+%E3%83%8A%E3%83%B3%E3%83%8F%E3%82%A6%E3%82%B9/@35.4788162,140.0441912,17z/data=!3m1!4b1!4m10!4m9!1m1!4e1!1m5!1m1!1s0x60229e418807ad7f:0xa289976e78085069!2m2!1d140.0444581!2d35.4821689!3e0?hl=ja"
@@ -195,18 +227,28 @@ const Contactus = () => {
                 </a>
               </div>
               <div className="element">
-                <i className="icon-container">
+                <a
+                  href="tel:+81-04-3661-6442"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="icon-container"
+                >
                   <PhoneIcon className="icon" />
-                </i>
+                </a>
                 <h1>電話</h1>
                 <a href="tel:+81-04-3661-6442" target="_blank" rel="noreferrer">
                   +81-04-3661-6442
                 </a>
               </div>
               <div className="element">
-                <i className="icon-container">
+                <a
+                  href="mailto:nanhousejapan@gmail.com"
+                  className="icon-container"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   <EmailIcon className="icon" />
-                </i>
+                </a>
                 <h1>メイル</h1>
                 <a
                   href="mailto:nanhousejapan@gmail.com"
@@ -217,10 +259,15 @@ const Contactus = () => {
                 </a>
               </div>
               <div className="element">
-                <i className="icon-container">
+                <a
+                  href="https://www.facebook.com/nanhousejp"
+                  className="icon-container"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   <FacebookOutlinedIcon className="icon" />
-                </i>
-                <h1>ページ</h1>
+                </a>
+                <h1>フェイスブック</h1>
                 <a
                   href="https://www.facebook.com/nanhousejp"
                   target="_blank"

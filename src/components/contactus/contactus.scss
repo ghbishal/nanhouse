@@ -264,6 +264,7 @@
         textarea {
           width: 100%;
           padding: 10px;
+          padding-left: 20px;
           font-size: 1.1rem;
           border-radius: 10px;
           background: var(--color-gray-light);
@@ -320,6 +321,12 @@
               border-radius: 50%;
               border: 1px solid var(--color-white);
               background-color: var(--color-orange);
+              transition: var(--transition);
+              border: 5px solid var(--color-white);
+
+              &:hover {
+                border: 5px solid var(--color-yellow);
+              }
 
               .icon {
                 color: var(--color-white);

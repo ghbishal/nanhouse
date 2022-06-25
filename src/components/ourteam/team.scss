@@ -79,23 +79,24 @@
 
       img {
         width: 240px;
-        height: 160px;
+        height: 345px;
         cursor: pointer;
         object-fit: cover;
       }
 
       .name {
-        font-family: "Averia Serif Libre", cursive;
-        padding-top: 2px;
-        font-weight: 600;
-        font-size: 1.4rem;
+        font-family: "Noto Serif JP", serif;
+        padding-top: 5px;
+        font-weight: 700;
+        font-size: 1.1rem;
         color: var(--color-black);
         text-transform: uppercase;
       }
 
       .title {
         color: var(--color-gray);
-        font-family: "Crimson Pro", serif;
+        font-family: "Noto Serif JP", serif;
+        letter-spacing: 0.11px;
         font-weight: 600;
         font-size: 1.2rem;
         text-transform: capitalize;
@@ -122,13 +123,13 @@
       }
 
       p {
-        font-family: "Crimson Pro", serif;
-        font-weight: 400;
+        font-family: "Noto Serif JP", serif;
+        font-weight: 300;
         width: 230px;
         text-align: center;
         padding: 3px;
         color: var(--color-gray);
-        font-size: 0.9rem;
+        font-size: 0.8rem;
       }
     }
   }
