@@ -3,6 +3,7 @@
   .location-container {
     max-width: var(--container-width-exlg);
     margin: 0 auto;
+    margin-bottom: 40px;
     .location-header {
       margin: 50px 0 20px;
       h1 {
@@ -182,10 +183,189 @@
       }
     }
   }
+
+  .contactus {
+    max-width: var(--container-width-exlg);
+    margin: 0 auto;
+
+    // margin-bottom: 40px;
+    .contact-us-head {
+      margin: 40px 0;
+      h1 {
+        text-align: center;
+        font-family: "Pacifico", cursive;
+        font-size: 2.8rem;
+        color: var(--color-yellow);
+        line-height: 1.2;
+      }
+
+      h2 {
+        font-family: "Averia Serif Libre", cursive;
+        text-align: center;
+        font-weight: 700;
+        font-size: 2rem;
+        color: var(--color-black);
+        text-transform: uppercase;
+        padding-top: 10px;
+      }
+
+      .divider {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 5px 0;
+        z-index: -1;
+
+        .left,
+        .right {
+          padding: 1px 20px;
+          border-radius: 4px;
+          background: var(--color-orange);
+        }
+
+        .spoonFork {
+          color: var(--color-orange);
+          font-size: 2rem;
+          margin: 0 10px;
+        }
+      }
+    }
+
+    .google-map {
+      padding: 20px;
+      display: flex;
+      justify-content: center;
+      iframe {
+        // padding: 10px 20px;
+        width: 100%;
+        height: 485px;
+      }
+    }
+    .contactus-form {
+      width: 100%;
+      margin: 0 auto;
+      display: flex;
+      justify-content: center;
+      padding: 0 20px;
+      margin-bottom: 40px;
+
+      form {
+        width: 550px;
+        display: flex;
+        flex-direction: column;
+        gap: 1.2rem;
+
+        input {
+          height: 55px;
+        }
+        input,
+        textarea {
+          width: 100%;
+          padding: 10px;
+          font-size: 1.1rem;
+          border-radius: 10px;
+          background: var(--color-gray-light);
+          resize: none;
+          color: var(--color-black);
+        }
+
+        button {
+          font-size: 1.2rem;
+          font-weight: 700;
+          line-height: 1.5;
+          border: 1px solid var(--color-white);
+          border-radius: 10px;
+          padding: 20px 20px;
+          letter-spacing: 0.8px;
+          background-color: var(--color-orange);
+          color: var(--color-white);
+          transition: var(--transition);
+          text-transform: uppercase;
+          cursor: pointer;
+
+          &:hover {
+            background-color: var(--color-white);
+            color: var(--color-orange);
+            border: 1px solid var(--color-orange);
+          }
+        }
+      }
+
+      .contact-element {
+        .element-container {
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          gap: 20px;
+
+          .element {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 240px;
+            height: 200px;
+            border: 1px solid var(--color-gray-light);
+            -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
+            box-shadow: 2px 2px 10px 1px rgba(201, 201, 201, 0.47);
+
+            .icon-container {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              width: 60px;
+              height: 60px;
+              padding: 18px;
+              border-radius: 50%;
+              border: 1px solid var(--color-white);
+              background-color: var(--color-orange);
+
+              .icon {
+                color: var(--color-white);
+                font-size: 25px;
+              }
+            }
+
+            h1 {
+              color: var(--color-black);
+              font-weight: 700;
+              font-family: "Noto Serif JP", serif;
+              font-size: 1.5rem;
+              margin: 5px 0;
+              letter-spacing: 1px;
+            }
+
+            a {
+              text-align: c;
+              font-family: "Noto Serif JP", serif;
+              font-size: 0.8rem;
+              letter-spacing: 1px;
+              color: var(--color-gray);
+              text-align: center;
+            }
+          }
+        }
+      }
+    }
+  }
 }
 
 /* ==================== MEDIA QUERY ==================*/
 
+@media screen and (max-width: 850px) {
+  .contactus-container {
+    .contactus {
+      .contactus-form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .contact-element {
+          margin-top: 30px;
+        }
+      }
+    }
+  }
+}
 @media screen and (max-width: 690px) {
   .contactus-container {
     .location-container {
@@ -194,6 +374,54 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+      }
+    }
+
+    .contactus {
+      .contactus-form {
+        .contact-element {
+          .element-container {
+            // .element {
+            //   width: 220px;
+            //   height: 200px;
+            // }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .contactus-container {
+    .contactus {
+      .google-map {
+        iframe {
+          height: 300px;
+        }
+      }
+      .contactus-form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        form {
+          width: 100%;
+        }
+
+        .contact-element {
+          margin-top: 30px;
+          .element-container {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+
+            .element {
+              max-width: 100%;
+              height: 200px;
+            }
+          }
+        }
       }
     }
   }

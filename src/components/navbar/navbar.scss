@@ -311,3 +311,48 @@
     }
   }
 }
+
+// form {
+//   width: 550px;
+//   display: flex;
+//   flex-direction: column;
+//   gap: 1.2rem;
+//   padding: 10px 20px;
+
+//   input,
+//   textarea {
+//     width: 100%;
+//     padding: 1.5rem;
+//     border-radius: 0.5rem;
+//     background: var(--color-gray-light);
+//     resize: none;
+//     color: var(--color-black);
+//     font-size: 1.2rem;
+
+//     &::placeholder {
+//       color: var(--color-black-light);
+//       font-size: 1.2rem;
+//     }
+//   }
+
+//   button {
+//     font-size: 1.2rem;
+//     font-weight: 700;
+//     line-height: 1.5;
+//     border: 1px solid var(--color-white);
+//     border-radius: 10px;
+//     padding: 20px 20px;
+//     letter-spacing: 0.8px;
+//     background-color: var(--color-orange);
+//     color: var(--color-white);
+//     transition: var(--transition);
+//     text-transform: uppercase;
+//     cursor: pointer;
+
+//     &:hover {
+//       background-color: var(--color-white);
+//       color: var(--color-orange);
+//       border: 1px solid var(--color-orange);
+//     }
+//   }
+// }
