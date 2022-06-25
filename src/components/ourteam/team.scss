@@ -1,6 +1,6 @@
 .ourteam-container {
   .valuableAssets {
-    background-image: url(../../assets/bgimg/parallax01.jpg);
+    background-image: url(../../assets/bgimg/ichigaya.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -85,10 +85,11 @@
       }
 
       .name {
-        font-family: "Noto Serif JP", serif;
+        // font-family: "Noto Serif JP", serif;
+        font-family: "GenJyuuBold", "Noto Serif JP", serif;
         padding-top: 5px;
         font-weight: 700;
-        font-size: 1.1rem;
+        font-size: 1.4rem;
         color: var(--color-black);
         text-transform: uppercase;
       }

@@ -70,9 +70,8 @@
           h1 {
             color: var(--color-orange);
             font-weight: 700;
-            font-family: "Noto Serif JP", serif;
+            font-family: "GenJyuuBold", "Noto Serif JP", serif;
             font-size: 1.8rem;
-            letter-spacing: 1px;
           }
           .divider {
             display: flex;
@@ -114,8 +113,7 @@
           h1 {
             color: var(--color-black);
             font-weight: 700;
-            font-family: "Noto Serif JP", serif;
-            letter-spacing: 1px;
+            font-family: "GenJyuuBold", "Noto Serif JP", serif;
             margin-bottom: 5px;
           }
 
@@ -134,6 +132,14 @@
               color: var(--color-gray);
               font-size: 0.8rem;
               letter-spacing: 0.8px;
+              span {
+                color: red;
+                text-align: center;
+                font-weight: 300;
+                font-family: "Noto Serif JP", serif;
+                font-size: 0.8rem;
+                letter-spacing: 0.8px;
+              }
             }
           }
         }
@@ -145,9 +151,8 @@
           h1 {
             color: var(--color-black);
             font-weight: 700;
-            font-family: "Noto Serif JP", serif;
+            font-family: "GenJyuuBold", "Noto Serif JP", serif;
             font-size: 1.4rem;
-            letter-spacing: 1px;
             margin-bottom: 5px;
           }
           h2 {
@@ -166,7 +171,7 @@
           justify-content: center;
           color: var(--color-black);
           font-weight: 800;
-          font-family: "Noto Serif JP", serif;
+          font-family: "GenJyuuBold", "Noto Serif JP", serif;
           font-size: 1.2rem;
           letter-spacing: 1px;
           margin-bottom: 5px;

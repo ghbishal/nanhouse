@@ -32,7 +32,6 @@ const Team = () => {
             <Pulse delay={50} duration={2000}>
               <div className="team" key={id}>
                 <img src={img} alt={name} className="photo" />
-
                 <h2 className="name">{name}</h2>
                 <h3 className="title">{title}</h3>
                 <div className="divider">

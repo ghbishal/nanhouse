@@ -1,31 +1,24 @@
 const team = [
   {
     id: 1,
-    name: "タパ　ダル　バハドウル",
-    title: "chef",
+    name: "タパ　ダル",
+    title: "ウェイター",
     img: require("../assets/team/bishnumama.jpg"),
-    desc: `Meet Bishal Khadka, chef de cousine in our restaurant. Bishal has 5 years of experience in restaurant business. His favorite food is Tandoori. `,
+    desc: `こちらはこのレストランのウェイターのダルさんです。ダルさんは12年間の経験をお持ちしております。ダルさんの好きな食べ物はモーモーです. `,
   },
   {
     id: 2,
-    name: "Bishal Khadka",
-    title: "chef",
-    img: require("../assets/team/tandoorUncle.jpg"),
-    desc: `Meet Bishal Khadka, chef de cousine in our restaurant. Bishal has 5 years of experience in restaurant business. His favorite food is Tandoori. `,
+    name: "カンデル　プリン",
+    title: "シェフ",
+    img: require("../assets/team/premprasadkandel.jpg"),
+    desc: `こちらはこのレストランのウェイターのプリンさんです。プリンさんは12年間の経験をお持ちしております。プリンさんの好きな食べ物はタンドリーチキンです.`,
   },
   {
     id: 3,
-    name: "サパコタ　ハリ　バハドウル",
-    title: "chef",
+    name: "サパコタ　ハリ",
+    title: "シェフ",
     img: require("../assets/team/tandoorUncle.jpg"),
-    desc: `Meet Bishal Khadka, chef de cousine in our restaurant. Bishal has 5 years of experience in restaurant business. His favorite food is Tandoori. `,
-  },
-  {
-    id: 4,
-    name: "タパ　ダル　バハドウル",
-    title: "chef",
-    img: require("../assets/team/bishnumama.jpg"),
-    desc: `Meet Bishal Khadka, chef de cousine in our restaurant. Bishal has 5 years of experience in restaurant business. His favorite food is Tandoori. `,
+    desc: `こちらはこのレストランのウェイターのハリさんです。ハリさんは12年間の経験をお持ちしております。ハリさんの好きな食べ物はチキンチリです. `,
   },
 ];
 export default team;

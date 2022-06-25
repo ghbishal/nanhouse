@@ -10,10 +10,8 @@ import NANHOUSE from "../../assets/nanhouse.jpg";
 import SETMENU from "../../assets/setPic.jpg";
 import CurrencyYenRoundedIcon from "@mui/icons-material/CurrencyYenRounded";
 
-import PARALLAX01 from "../../assets//bgimg/parallax01.jpg";
-
 // import Swiper core and required modules
-import {Autoplay, Pagination, Navigation, EffectCoverflow} from "swiper";
+import {Autoplay, Pagination, EffectCoverflow} from "swiper";
 import {Swiper, SwiperSlide} from "swiper/react";
 
 // Import Swiper styles
@@ -24,60 +22,31 @@ const data = [
   {
     image: require("../../assets/sidemenu/GapaoRiceSet.jpg"),
     name: "ガパオライス セット",
-    description: "ガパオライス, ソフトドリンク,  サラダ",
+    description: "サラダ + ガパオライス + ソフトドリンク",
     price: 1090,
   },
 
   {
-    image: NANHOUSE,
-    name: "2",
-    description: "Lorem ipsum dolor sit amet consectetur",
+    image: require("../../assets/sidemenu/HCNset.jpg"),
+    name: "ハニーチーズナン セット",
+    description:
+      "サラダ + ハニーチーズナン + チョイスカレー1種類 + ソフトドリンク ",
+    price: 1080,
   },
 
   {
-    image: SETMENU,
-    name: "3",
-    description: "Lorem ipsum dolor sit amet consectetur",
+    image: require("../../assets/sidemenu/briyaniset.jpg"),
+    name: "チキン/マトンビリヤニ",
+    description: "サラダ + チキン/マトンビリヤニ + ソフトドリンク",
+    price: 1290,
   },
 
   {
-    image: NANHOUSE,
-    name: "4",
-    description: "Lorem ipsum dolor sit amet consectetur",
-  },
-  {
-    image: SETMENU,
-    name: "5",
-    description: "Lorem ipsum dolor sit amet consectetur",
-  },
-
-  {
-    image: NANHOUSE,
-    name: "6",
-    description: "Lorem ipsum dolor sit amet consectetur",
-  },
-
-  {
-    image: SETMENU,
-    name: "7",
-    description: "Lorem ipsum dolor sit amet consectetur",
-  },
-
-  {
-    image: NANHOUSE,
-    name: "8",
-    description: "Lorem ipsum dolor sit amet consectetur",
-  },
-  {
-    image: SETMENU,
-    name: "9",
-    description: "Lorem ipsum dolor sit amet consectetur",
-  },
-
-  {
-    image: NANHOUSE,
-    name: "10",
-    description: "Lorem ipsum dolor sit amet consectetur",
+    image: require("../../assets/sidemenu/Butterchickenset.jpg"),
+    name: "バターチキンセット",
+    description:
+      "サラダ + ナン（Or）ライス + バターチキンカレー + ソフトドリンク ",
+    price: 1080,
   },
 ];
 
